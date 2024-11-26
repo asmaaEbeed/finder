@@ -1,0 +1,846 @@
+@font-face {
+    font-family: 'Inter-light';
+    src: url('../fonts/Inter_18pt-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-medium';
+    src: url('../fonts/Inter_18pt-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-thin';
+    src: url('../fonts/Inter_18pt-Thin.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter-medium', sans-serif, Tahoma, Geneva, Verdana;
+    font-size: 16px;
+
+}
+
+/* .banner {
+    background-color: #3d7a81;
+    padding: 117px 0;
+    position: relative;
+} */
+
+/* .banner-bg {
+    background-image: url("../images/hero.png");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+} */
+.container {
+    margin: 3%;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+/* Banner section*/
+.bg-info {
+    --fn-bg-opacity: 1;
+    background-color: #3d7a81 !important;
+}
+
+.py-5 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.py-3 {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.py-2 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.pr-2 {
+    padding-right: 1rem;
+}
+
+.pl-2 {
+    padding-left: 1rem;
+}
+
+.my-3 {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+/*banner bg image container */
+.translate-middle {
+    transform: translate(-50%, -50%) !important;
+}
+
+.start-50 {
+    left: 50% !important;
+}
+
+.top-50 {
+    top: 50% !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.width-140pr {
+    width: 140% !important;
+}
+
+/* banner background image*/
+figure, img, svg {
+    max-width: 100%;
+}
+
+figure, img {
+    height: auto;
+    vertical-align: middle;
+}
+
+/*Banner data*/
+.m-auto {
+    margin: auto;
+}
+
+.banner-data-container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    max-width: 630px;
+    z-index: 2;
+}
+
+.banner-title {
+    font-family: "Inter-medium", Courier, monospace;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.banner-title::selection {
+    background: #397078;
+}
+
+/*Banner form*/
+.banner-form {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 13px;
+    padding: 10px;
+    margin-bottom: 48px;
+    font-size: 16px;
+}
+
+.banner-form-element {
+    display: flex;
+    align-items: center;
+    color: #4e5562;
+    font-size: 16px;
+
+}
+
+.banner-search-input-container {
+    width: 50%;
+}
+
+.banner-form-input {
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    padding-left: 10px;
+    font-weight: lighter;
+    font-family: "Inter-light", sans-serif, Tahoma, Geneva, Verdana;
+    font-size: 16px;
+    width: 75%;
+
+}
+
+.banner-location-input-container {
+    border-left: 1px solid #d1d1d1;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 30%;
+
+}
+
+.banner-btn-container {
+    width: 20%;
+}
+
+.banner-search-btn {
+    background-color: #d85151;
+    padding: 14px 24px;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: none;
+
+}
+
+.banner-btns-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 4px;
+}
+
+.banner-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Pros in your area */
+
+.pros-heading {
+    margin-bottom: 3%;
+}
+
+.pros-heading::selection {
+    background: #d1d1d1;
+}
+
+.pros-element-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pros-element {
+    width: 25%;
+    font-family: "inter-light", sans-serif, Tahoma, Geneva, Verdana;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.pros-element-circle {
+    background-color: #eef1f6;
+    color: #333d4c;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.pros-element-circle:hover {
+    transform: scale(1.1);
+}
+
+/* Get matched with local pros */
+.local-pros-container {
+    display: flex;
+}
+
+.local-pros-container aside {
+    width: 30%;
+    background-color: #eef1f6;
+    position: relative;
+}
+
+.aside-text {
+    max-width: 306px;
+    padding: 50px 40px 0;
+}
+
+.aside-text h3 {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+}
+
+.aside-text p {
+    font-size: 0.875rem;
+    color: #848484
+}
+
+.img-circle-container {
+    width: 343px;
+    height: 352px;
+}
+
+.aside-img-circle {
+    overflow: visible;
+    background-color: #f8fafd;
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    top: 30px;
+    position: relative;
+    left: 50px;
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.aside-img-container {
+    position: absolute;
+    bottom: 58px;
+    right: -37px;
+    width: 106%;
+}
+
+.local-pros-text-container {
+    width: 70%;
+    padding: 50px;
+}
+
+.local-pros-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+
+.local-pros-header h2::selection {
+    background: #d1d1d1;
+}
+
+.local-pros-list, .popular-home-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.local-pros-list-element {
+    width: 50%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.local-pros-list-element-img-cont {
+    width: 124px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.local-pros-list-element-img-cont img {
+    transition: all 0.3s ease-in-out;
+
+}
+
+.local-pros-list-element-img-cont img:hover {
+    transform: scale(1.1);
+}
+
+.local-pros-list-element-txt-cont {
+    padding: 0 10px;
+}
+
+.local-pros-list-element-txt-cont p {
+    margin-bottom: 10px;
+
+}
+
+.local-pros-list-element-txt-cont i {
+    color: #fc9231;
+    padding-right: 5px;
+
+}
+
+.thin-font {
+    font-family: "Inter-thin", sans-serif, Tahoma, Geneva, Verdana;
+    font-weight: bold;
+    color: #4e5562
+}
+
+.small-text {
+    font-size: 12px;
+    color: #848484;
+}
+
+/*popular home section*/
+.popular-home-container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.popular-home-element-cont {
+    width: 33.3333%;
+    overflow: hidden;
+}
+
+.popular-home-element {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.popular-home-element img {
+    width: 100%;
+}
+
+.popular-home-element a {
+    text-decoration: none;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.popular-home-element-txt-cont {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-home-element-txt-cont p {
+    flex-basis: 30%;
+    color: #333d4c;
+    margin-bottom: 5px;
+
+}
+
+.popular-home-element-txt-cont p i {
+    color: #fc9231;
+    padding-right: 5px;
+
+}
+
+.popular-home-element-txt-cont button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.popular-home-element-txt-cont button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.popular-home-element .layout {
+    height: 100%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,4c4c4c+60,131313+100&0+0,1+100 */
+    background: linear-gradient(to bottom, rgba(119, 119, 119, 0) 0%, rgba(76, 76, 76, 0.178) 70%, rgba(23, 23, 23, 0.893) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    position: absolute;
+    z-index: 3;
+}
+
+.popular-home-element .p-relative p {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: #fff;
+    z-index: 4;
+}
+
+.popular-home-img {
+    transition: all 0.3s ease-in-out;
+}
+
+.popular-home-element:hover .popular-home-img {
+    transform: scale(1.1);
+}
+
+.heart-container {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    z-index: 1;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.heart-container i {
+    color: #3a3a3a;
+}
+
+.popular-home-element:hover .heart-container {
+    visibility: visible;
+}
+
+/* Expert Advice*/
+.bg-gray {
+    background-color: #f5f7fa;
+}
+
+.expert-advice-container,
+.how-it-work-container {
+    padding-top: 30px;
+}
+
+.expert-advice-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.black-font {
+    color: #000
+}
+
+.local-pros-list-element-txt-cont span {
+    padding: 3px 5px;
+    background-color: #eef1f6;
+    border-radius: 3px;
+}
+
+.exper-advice-p {
+    font-size: 20px;
+    margin-top: 8px;
+    font-family: "Inter-medium", sans-serif, Tahoma, Geneva, Verdana;
+}
+
+.pr-1-5 {
+    padding-right: 1.5rem;
+}
+
+.pl-1-5 {
+    padding-left: 1.5rem;
+}
+
+.expert-advice-img-container {
+    width: 49%;
+    overflow: hidden;
+}
+
+.expert-advice-img-container img {
+    max-width: 151px;
+    max-height: 173px;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.home-expert {
+    cursor: pointer;
+}
+
+.home-expert:hover .exper-advice-p {
+    text-decoration: underline;
+}
+
+.home-expert:hover .expert-advice-img {
+    transform: scale(1.1);
+}
+
+/*How it works*/
+.how-it-work-list {
+    flex-basis: 33.333%;
+}
+
+/*Grow your business*/
+.grow-business-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+}
+
+.grow-business-left {
+    flex-basis: 50%;
+    background-color: #3d7a81;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-business-right {
+    flex-basis: 50%;
+    height: 500px;
+    position: relative;
+    /* background-image: url("../images/become-pro-cta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+.grow-business-right img {
+    object-fit: cover !important;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.grow-business-left-block {
+    padding: 80px 69px 30px 30px;
+    font-size: 24px;
+    line-height: 38.578px
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.border-radius-8 {
+    border-radius: 8px;
+}
+
+.learn-more-btn {
+    background-color: transparent;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.add-business-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.add-business-btn:hover {
+    background-color: #c92d2d;
+}
+
+.translate-grow {
+    transition: all 0.3s ease-in-out;
+}
+
+.add-business-btn:hover .translate-grow {
+    /* transform: translate(-50%, -50%); */
+    /* transform: scale(1.2); */
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+    }
+}
+
+.learn-more-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.learn-more-btn:hover i {
+    animation-name: right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes right {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.circle-rounded {
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: calc(50% - 82px);
+    left: calc(50% -82px);
+    border: 2px solid #fff;
+    z-index: 3;
+    background-color: transparent;
+    padding: 8px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.inner-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    top: calc(50% - 41px);
+    left: calc(50% - 41px);
+}
+
+.small-inner-circle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #d85151;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+}
+
+/* App download */
+.app-download-section {
+    background-color: #fbeeee;
+    margin-top: 60px;
+}
+
+.app-download-text {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-download-img {
+    flex-basis: 50%;
+}
+
+.app-download-text p {
+    font-size: 30px;
+    font-family: 'Inter-medium', sans-serif;
+    font-weight: bold;
+}
+
+.app-btn {
+    background-color: #1d2735 !important;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    padding: 2px 20px;
+    margin: 5px;
+}
+.app-btn svg {
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin: 8px;
+}
+.app-btn span {
+    display: inline-block;
+}
+.app-btn:hover{
+    background-color: #4e5562 !important;
+}
+.align-items-center{
+    align-items: center !important;
+}
+/*comming pricing refernce*/
+.flex-basis-50 {
+    flex-basis: 50%;
+}
+.flex-basis-30 {
+    flex-basis: 30%;
+}
+.flex-basis-70 {
+    flex-basis: 70%;
+}
+.comming-pricing-cont {
+    padding: 20px 20px 0 20px;
+    
+}
+.comming-pricing-cont p {
+    flex-basis: 30%;
+    color: #333d4c;
+    margin-bottom: 5px;
+    margin-bottom: 20px;
+
+}
+
+.comming-pricing-cont p i {
+    color: #fc9231;
+    padding-right: 5px;
+
+}
+
+.comming-pricing-cont button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    margin: 20px 0;
+}
+
+.comming-pricing-cont button:hover {
+    color: #fff;
+    background-color: #000;
+}
+.comming-pricing-img-cont img {
+    object-fit: cover !important;
+    height: 100%;
+}
+.mr-12 {
+    margin-right: 12px;
+}
+.ml-12 {
+    margin-left: 12px;
+}

@@ -21,7 +21,6 @@
 
 :root {
     font-size: 16px;
-    letter-spacing: 1px;
     font-family: 'Inter-medium', sans-serif, Tahoma, Geneva, Verdana;
     --flex-basis-30: 33.33333%;
     --dark-blue-gray: #333d4c;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back - Finder</title>
+    <link rel="stylesheet" href="./icons/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section flex-column min-h-100vh">
+            <div class="logo">
+                <img src="./images/finder-logo.svg" alt="Finder Logo">
+                <span>Finder</span>
+            </div>
+            
+            <h1>Welcome back</h1>
+            
+            <div class="account-prompt">
+                <span>Don't have an account?</span>
+                <a href="/signup.html" class="create-account">Create an account</a>
+            </div>
+
+            <form class="login-form">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group password-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="button" class="toggle-password">
+                        <img src="./images/pass-eye.svg" alt="Show password">
+                    </button>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span>Remember for 30 days</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+
+            <div class="divider">
+                <span>or continue with</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn google">
+                    <i class="fa-brands fa-google"></i>
+                    Google
+                </button>
+                <button class="social-btn facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    Facebook
+                </button>
+                <button class="social-btn apple">
+                    <i class="fa-brands fa-apple"></i>
+                    Apple
+                </button>
+            </div>
+
+            <div class="footer">
+                <a href="#" class="help-link">Need help?</a>
+                <p class="copyright">© All rights reserved. Made by Createx Studio</p>
+            </div>
+        </div>
+
+        <div class="image-section flex-column">
+            <div class="img-side-bg">
+
+                <img src="./images/account-cover.png" alt="Woman using phone">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

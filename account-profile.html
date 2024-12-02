@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finder - Profile</title>
+    <link rel="stylesheet" href="./css/style-nav.css" />
+    <link rel="stylesheet" href="./css/account-profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="header-left">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Finder</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#" class="nav-link active">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        Home
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="nav-link">Listings</a>
+                    <a href="#" class="nav-link">Account</a>
+                    <a href="#" class="nav-link">Pages</a>
+                    <a href="#" class="nav-link">Docs</a>
+                    <a href="#" class="nav-link">Components</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </button>
+                <button class="btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add property
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Profile" class="profile-image">
+                <h2>Michael Williams</h2>
+                <p class="email">m.williams@example.com</p>
+                <nav class="profile-nav">
+                    <a href="#" class="profile-nav-link active">My profile</a>
+                    <a href="#" class="profile-nav-link">My listings</a>
+                    <a href="#" class="profile-nav-link">Reviews</a>
+                    <a href="#" class="profile-nav-link">Favorites</a>
+                    <a href="#" class="profile-nav-link">Payment details</a>
+                    <a href="#" class="profile-nav-link">Account settings</a>
+                    <a href="#" class="profile-nav-link">Help center</a>
+                    <a href="#" class="profile-nav-link">Sign out</a>
+                </nav>
+            </div>
+        </aside>
+
+        <div class="main-area">
+            <div class="stats-grid">
+                <div class="wallet-card">
+                    <h3>Personal wallet</h3>
+                    <p class="amount">$0.00</p>
+                    <button class="btn-link">Top up the wallet →</button>
+                </div>
+                <div class="completion-card">
+                    <div class="completion-progress">65%</div>
+                    <div class="completion-info">
+                        <h3>Complete your profile</h3>
+                        <ul>
+                            <li>+ Add the languages you speak</li>
+                            <li>+ Verify your email</li>
+                            <li>+ Add date of birth</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-info">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Profile" class="profile-image-small">
+                <div class="profile-details">
+                    <h2>Michael Williams</h2>
+                    <div class="contact-info">
+                        <span>m.williams@example.com</span>
+                        <span>(315) 555-7890</span>
+                        <span>New York, Brooklyn</span>
+                    </div>
+                    <p class="bio">Extensive experience in rentals and a vast database means I can quickly find the options that are right for you. Looking for a seamless and exciting rental experience? Contact me today - I promise it won't be boring! Your perfect home is just a call away.</p>
+                    <button class="btn-link">Edit profile</button>
+                </div>
+            </div>
+
+            <section class="listings">
+                <div class="section-header">
+                    <h2>My listings</h2>
+                    <button class="btn-link">View all</button>
+                </div>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property">
+                            <button class="favorite-btn">♡</button>
+                            <span class="property-tag">For rent</span>
+                        </div>
+                        <div class="property-info">
+                            <p class="property-price">$2,500</p>
+                            <p class="property-address">40 S 9th St, Brooklyn, NY 11249</p>
+                            <p class="property-size">97 sq.m</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Property">
+                            <button class="favorite-btn">♡</button>
+                            <span class="property-tag">For rent</span>
+                        </div>
+                        <div class="property-info">
+                            <p class="property-price">$1,350</p>
+                            <p class="property-address">414 Park Ave, Brooklyn, NY 11205</p>
+                            <p class="property-size">45 sq.m</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="section-header">
+                    <h2>Reviews</h2>
+                    <button class="btn-link">View all</button>
+                </div>
+                <div class="review-stats">
+                    <div class="stat-item">
+                        <h3>Reviews about you</h3>
+                        <p>8</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Reviews by you</h3>
+                        <p>12</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Marked as "Useful"</h3>
+                        <p>3</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Your overall rating</h3>
+                        <p>4.9 ★</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

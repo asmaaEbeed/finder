@@ -211,7 +211,7 @@ figure, img {
 
 .banner-search-btn {
     background-color: var(--red-color);
-    padding: 14px 24px;
+    padding: 14px 17px;
     color: var(--white-color);
     border-radius: 8px;
     text-align: center;
@@ -668,7 +668,7 @@ figure, img {
     background-color: transparent;
     color: var(--white-color);
     border-radius: 8px;
-    padding: 12px 24px;
+    padding: 12px 17px;
 }
 
 .add-business-btn {
